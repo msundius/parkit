@@ -1,0 +1,113 @@
+hello park world
+building my parking lot!!!
+no problem!
+new car: type 1
+COMPACT
+lets park! 11
+new car: type 3
+HANDICAPPED
+lets park! 33
+new car: type 4
+REGULAR
+lets park! 44
+new car: type 2
+ELECTRIC
+lets park! 22
+new car: type 2
+ELECTRIC
+lets park! 22
+new car: type 2
+ELECTRIC
+lets park! 22
+new car: type 2
+ELECTRIC
+lets park! 22
+new car: type 2
+ELECTRIC
+lets park! 22
+new car: type 2
+ELECTRIC
+lets park! 22
+new car: type 2
+ELECTRIC
+lets park! 22
+new car: type 2
+ELECTRIC
+lets park! 22
+new car: type 2
+ELECTRIC
+lets park! 22
+new car: type 2
+ELECTRIC
+lets park! 22
+new car: type 2
+ELECTRIC
+lets park! 22
+new car: type 2
+ELECTRIC
+lets park! 22
+new car: type 2
+ELECTRIC
+lets park! 22
+new car: type 2
+ELECTRIC
+lets park! 22
+new car: type 2
+ELECTRIC
+lets park! 22
+new car: type 2
+ELECTRIC
+lets park! 22
+new car: type 2
+ELECTRIC
+lets park! 22
+new car: type 2
+ELECTRIC
+lets park! 22
+new car: type 2
+ELECTRIC
+lets park! 22
+new car: type 2
+ELECTRIC
+lets park! 22
+unsupported operation: x
+new car: type 2
+ELECTRIC
+lets park! 22
+DOESNT RUN
+Car doesn't run, you can't park hereDOESNT RUN
+new car: type 2
+ELECTRIC
+lets park! 22
+new car: type 2
+ELECTRIC
+lets park! 22
+new car: type 2
+ELECTRIC
+lets park! 22
+new car: type 2
+ELECTRIC
+lets park! 22
+new car: type 2
+ELECTRIC
+lets park! 22
+lot is full
+
+we found your ELECTRIC car, id 40 40
+we found your ELECTRIC car, id 6 6
+we found your COMPACT car, id 1 1
+section name:HANDICAPPED
+capacity:25
+available:24
+section name:REGULAR
+capacity:25
+available:24
+section name:ELECTRIC
+capacity:25
+available:0
+section name:COMPACT
+capacity:25
+available:24
+
+RUN FINISHED; exit value 0; real time: 0ms; user: 0ms; system: 0ms
+

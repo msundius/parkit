@@ -1,0 +1,28 @@
+
+parking lot program. 
+Author: C Michael Sundius
+Date: 7/8/2022
+Copyright (c) 2022, C Michael Sundius, All rights reserved.
+
+developed with apache netbeans IDE for C++
+version 14 
+compiled with 
+g++ (Ubuntu 7.5.0-3ubuntu1~18.04) 7.5.0
+
+input file (park_it.txt) must be linked to /tmp
+
+ln -s <path-to-base>/park_it.txt /tmp/park_it.txt
+
+ouput is sent to standard out. compare with
+park_it_output.txt
+
+input file has 3 columns 
+operation: p (park) or u (unpark)
+type: type of car 
+1 compact
+2 electric
+3 handicapped
+4 regular
+vin: vehicle identification number which 
+you need in order to pick up your car (i.e. unpark)
+
