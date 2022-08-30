@@ -54,12 +54,18 @@ std::string car_names[] = {
 
 int dmv_current_vin = 1;
 
+bool vin_match(const Car car_p, int id) {
+    if (car_p.vin == id)
+        return true;
+    else
+        return false;
+}
+
 class Car {
 public:
     Car(int typ);
     Car(int typ, int id);
     bool runs(){return !(car_type == T_DOESNT_RUN);}
-    //bool vin_match(int id) {(this->vin == id)?true:false;} 
     std::string getCarName() {
         if ((car_type == T_DOESNT_RUN))
             return DOESNT_RUN;
@@ -71,13 +77,6 @@ public:
     
 };
 
-bool vin_match(const Car car_p, int id) {
-    if (car_p.vin == id)
-        return true;
-    else
-        return false;
-}
-
 Car::Car(int typ) {
     if ((typ <= T_ANY)|| (typ > T_REGULAR)) car_type = T_DOESNT_RUN;
     else car_type = typ;
@@ -85,6 +84,7 @@ Car::Car(int typ) {
         cout << "new car: type " << typ << endl;
     vin = dmv_current_vin++;
 }
+
 Car::Car(int typ, int id) {
     if ((typ <= T_ANY)|| (typ > T_REGULAR)) car_type = T_DOESNT_RUN;
     else car_type = typ;
@@ -120,9 +120,6 @@ void LotSection::report_state()
 
 Car * LotSection::unpark_car(int id) {
     deque<Car *>::iterator it;
-    //it = std::find_if(slots.begin(), slots.end(), vin_match(it, id));
-    //it = std::find_if(slots.begin(), slots.end(), 
-    //                std::bind(vin_match, std::placeholders::_1, id));
     it = std::find_if(slots.begin(), slots.end(), [id](Car const *car_p)->bool{ return (car_p->vin == id)?true:false;});
 
     
@@ -150,11 +147,13 @@ int LotSection::park_car(Car *car) {
      slots.push_front(car);
      return SUCCESS;
 }
+
 class RSection:public LotSection {
 public:
     RSection(int max):LotSection(max) { type_str = REGULAR; car_type = T_REGULAR;}
 
 };
+
 class HSection:public LotSection {
 public:
     HSection(int max):LotSection(max) { type_str = HANDICAPPED; car_type = T_HANDICAPPED;}
